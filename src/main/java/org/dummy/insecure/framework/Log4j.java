@@ -1,12 +1,12 @@
-package org.owasp.webgoat.vulnerable;
+package org.dummy.insecure.framework;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class VulnerableComponent {
+public class Log4j {
     // Vulnerable Log4j pattern
-    private static final Logger logger = LogManager.getLogger(VulnerableComponent.class);
+    private static final Logger logger = LogManager.getLogger(Log4j.class);
     
     public void vulnerableLog4jMethod(String userInput) {
         // This is vulnerable to CVE-2021-44228 (Log4Shell)
